@@ -18,9 +18,15 @@ const config: Config = {
           textColor: "#FFFFFF",
         },
       },
-      fontFamily: {
-        
-      }
+      fontSize: {
+        "h1-base": "2.2rem",
+        "h1-sm": "3rem",
+        "h1-md": "3.2rem",
+        "h1-lg": "3.8rem",
+        "h1-xl": "4rem",
+        "p-sm": "1rem",
+        "p-md": "1.5rem",
+      },
     },
   },
   plugins: [],
