@@ -25,10 +25,10 @@ export function ButtonIcon({ icon, title, route }: ButtonIconProps) {
   return (
     <Link href={route}>
       <div className="flex items-center justify-center flex-col">
-        <button className="border-[1px] border-solid border-dark-background rounded-lg p-1">
+        <button className="border-[1px] border-solid border-dark-background rounded-lg p-1 w-14">
           <Image src={breathIcon} width={60} height={60} alt={title} />
         </button>
-        <p className="mt-2 text-center">{title}</p>
+        <p className="mt-2 text-center button-icon-title">{title}</p>
       </div>
     </Link>
   );

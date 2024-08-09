@@ -3,7 +3,7 @@ import { ButtonIcon } from "@/components/ButtonIcon";
 export default function Home() {
   return (
     <main className="w-screen h-screen flex flex-col items-center">
-      <div className="w-screen h-40 space-y-4 flex flex-col items-center mt-20">
+      <div className="w-screen h-40 flex flex-col items-center mt-12">
         <h1>Wellcome</h1>
         <p>Select o que vc quiser</p>
       </div>
