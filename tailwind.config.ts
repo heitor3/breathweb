@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+      },
       colors: {
         light: {
           background: "#e8e7e9ff",
@@ -24,8 +27,9 @@ const config: Config = {
         "h1-md": "3.2rem",
         "h1-lg": "3.8rem",
         "h1-xl": "4rem",
+        "p-xs": "0.8rem",
         "p-sm": "1rem",
-        "p-md": "1.5rem",
+        "p-md": "1.2rem",
       },
     },
   },

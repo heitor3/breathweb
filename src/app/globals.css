@@ -18,9 +18,9 @@ h1 {
 }
 
 p {
-  @apply sm:text-p-sm md:text-p-md;
+  @apply sm:text-p-sm lg:text-p-md;
 }
 
 .button-icon-title {
-  @apply sm:text-[12px] md:text-[16px] text-xs;
+  @apply text-p-xs sm:text-p-sm md:text-p-md;
 }
