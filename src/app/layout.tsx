@@ -20,8 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="">
-      <body className={`${roboto.className}`}>{children}</body>
+    <html lang="en" className="flex items-center justify-center">
+      <body className={`${roboto.className} md:max-w-[1440px]`}>
+        {children}
+      </body>
     </html>
   );
 }

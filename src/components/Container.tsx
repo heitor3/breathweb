@@ -7,11 +7,7 @@ type ContainerProps = {
 
 function Container({ children, isColumn = false }: ContainerProps) {
   const exposure = isColumn ? "flex-row max-lg:flex-col" : "flex-col";
-  return (
-    <main className={`flex ${exposure} justify-center md:max-w-[1440px]`}>
-      {children}
-    </main>
-  );
+  return <main className={`flex ${exposure} justify-center`}>{children}</main>;
 }
 
 export default Container;
