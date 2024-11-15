@@ -1,5 +1,7 @@
+"use client";
 import * as breath from "@/assets/IconBreath";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const BreathType = {
   breath_1: breath.AnxietyIcon,
@@ -30,11 +32,18 @@ type HeaderBreathProps = {
 export default function Header({ icon, title }: HeaderBreathProps) {
   const image = BreathType[icon];
   const text = BreathName[title];
+  const { t } = useTranslation();
 
   return (
-    <div>
-      <Image src={image} width={60} height={60} alt="text" />
-      <p>{text}</p>
+    <div className="justify-star mt-6 flex flex-col items-center space-y-4 md:mt-6 md:w-full">
+      <Image
+        src={image}
+        width={200}
+        height={200}
+        alt="text"
+        className="max-lg:h-16 max-lg:w-16"
+      />
+      <p className="text-[32px] font-bold max-lg:text-[22px]">{t(text)}</p>
     </div>
   );
 }
